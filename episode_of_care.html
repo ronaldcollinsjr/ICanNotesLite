@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <form>
+            <title>Episodes of Care</title>
+            <div style="width: 100%; height: 50%;">
+                <div class="spacer" style="margin-left: 100px;">
+                    <h3> Patient's Condition</h3>
+                </div>
+                <div class="entry-left" style="margin-left: 150px;">
+                    <div>
+                        <label class="label-left">Date of Current Illness Onset</label>
+                        <input id="dateOfIllnessOnset" type="date" class="input_3d"/>
+                    </div>
+                    <div>
+                        <label class="label-left">Date of Similar Illness</label>
+                        <input id="dateOfSimilarIllness" type="date" class="input_3d" size="10" />
+                    </div>
+                    <div>
+                        <label class="label-left">Date of Curr Admission From</label>
+                        <input id="fromDateOfAdmission" type="date" class="input_3d" size="10" />
+                        <label>To</label>
+                        <input id="toDateOfAdmission" type="date" class="input_3d" size="10" />
+                    </div>
+                    <div>
+                        <label class="label-left">Legal Status Admitting DX</label>
+                        <input id="legalStatusAdmitting" class="input_3d" size="20" />
+                    </div>
+                    <div>
+                        <label class="label-left">Dates Unable To Work From</label>
+                        <input id="unableToWorkFromDate" type="date" class="input_3d" size="10" />
+                        <label>To</label>
+                        <input id="unableToWorkToDate" type="date" class="input_3d" size="10" />
+                    </div>
+                    <div class="spacer" style="height: 3px; margin-top: 10px; margin-bottom: 10px; background-color:black;"></div>    
+                    <div>
+                        <label class="label-left">Condition Related To Employment</label>
+                        <select id="conditionRelatedToEmploy"/>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="label-left">Condition Related To Auto Accident</label>
+                        <select id="conditionRelatedToAccident"/>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                        <label style="margin-left: 10px;">State Of Accident</label>
+                        <select id="stateOfAccident"/>
+                            <option value="MD">MD</option>
+                            <option value="DE">DE</option>
+                            <option value="VA">VA</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="label-left">Condition Related To Other Accident</label>
+                        <select id="conditionRelatedToOther"/>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="spacer" style="height: 2px; margin-top: 10px; margin-bottom: 10px; background-color:black;"></div>    
+                    <div>
+                    <div>
+                        <label class="label-left">In Treatment Previously</label>
+                        <select id="inTreatmentPrevious"/>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                        <label style="margin-left: 10px;">if yes, where?</label>
+                        <input id="previousTreatmentLocation" class="input_3d" size="30"/>
+                    </div>
+                    <div>
+                        <label class="label-left">Date of Death</label>
+                        <input id="dateOfDeath" type="date" class="input_3d"/>
+                    </div>
+                    <div>
+                        <label class="label-left">Prelimary Cause</label>
+                        <input id="causeOfDeath" class="input_3d" size="40"/>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

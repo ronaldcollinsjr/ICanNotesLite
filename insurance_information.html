@@ -1,0 +1,192 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+            <title>Insurance Information</title>
+            <div style="width: 100%; height: 100%;">
+                <div class="spacer" style="margin-left: 100px; ">
+                    <h3>Insurance Information</h3>
+                </div>
+                <form>
+                    <div class="entry-left" style="width: 650px; margin-left: 150px;">
+                        <div>
+                            <label>Patient</label>
+                            <input id="patientName" class="input_3d" size="30"/>   
+                            <label style="margin-left: 10px;">Medicaid ID</label>
+                            <input id="medicaidId" class="input_3d" size="20"/>   
+                        </div>
+                        <div class="div-2" style="margin-top: 30px; padding-left: 100px; width: 510px; border: 1px solid #ccc;">
+                            <div>Insurance Coverage<button style="margin-left: 230px;">New</button></div>
+                            <div>
+                                <select class="select-multi" multiple>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>                    
+                            </div>
+                            <div style="width: 510px; height: 20px;"></div>
+                        </div>
+                        <div class="div-2" style="margin-top: 30px; padding-left: 100px; padding-bottom: 20px; width: 510px; border: 1px solid #ccc;">
+                            <div style="margin-bottom: 5px;">
+                                <input type="checkbox"><label>Patient Repsonsible Party</label>
+                                <input type="checkbox"><label>Require Auth# in Notes</label>
+                            </div>
+                            <div style="margin-bottom: 5px;">
+                                <input type="checkbox"><label>EPSDT/Family Plan</label>
+                                <input type="checkbox"><label>Self Pay</label>
+                            </div>
+                            <div style="margin-bottom: 5px;">
+                                <input type="checkbox"><label>Account is in Collections</label>
+                                <input class="input_3d" size="5"><label> % Discount</label>
+                            </div>
+                            <div style="margin-bottom: 5px;">
+                                <input type="checkbox"><label>FREEZE ACCOUNT</label>
+                            </div>
+                            <div style="margin-bottom: 5px;">
+                                <select>
+                                    <option value="YES">YES</option>
+                                    <option value="NO">NO</option>
+                                </select>
+                                <label>MCM Auth. Recieved</label>
+                                <input class="input_3d" size="5"><label> % Discount</label>
+                            </div>
+                            <div>Additional Notes:</div>
+                            <div>
+                                <textarea class="select-multi" style="resize: none; overflow-y: scroll;"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="entry-left" style="margin-left: 10px; padding: 1px 5px 5px 5px; width: 900px; height: 600px; border: 0px solid black;">
+                    <div class="tab" style="width: 897px;">
+                        <div id="insuranceTabs">
+                             <button id="coverageDetailsBtn" name="insuranceTabs-tab" onclick="showContent(event, 'coverageDetails')">Coverage Details</button>
+                             <button id="benefitsBtn" name="insuranceTabs-tab" onclick="showContent(event, 'benefits')">Benefits</button>
+                             <button id="paymentsBtn" name="insuranceTabs-tab" onclick="showContent(event, 'payments')">Payments</button>
+                             <button id="eligibilityBtn" name="insuranceTabs-tab" onclick="showContent(event, 'eligibility')">Eligibility</button>
+                        </div>
+                        <div style="float: left; width: 585px; height: 25px; border-bottom: 1px solid black;"></div>
+                    </div> 
+                    <div id="coverageDetails" name="insuranceTabs-content" class="tabcontent" style="width: 870px; height: 555px;">
+                        <form>
+                            <div>
+                                <label class="label-left">Insurance</label>
+                                <input class="input_3d" size="30">
+                            </div>
+                            <div>
+                                <label class="label-left">Member ID/Policy #</label>
+                                <input class="input_3d" size="15">
+                            </div>
+                            <div>
+                                <label class="label-left">Group #</label>
+                                <input class="input_3d" size="15">
+                            </div>
+                            <div>
+                                <label class="label-left">Patient relationship to insured</label>
+                                <select>
+                                    <option value="self">Self</option>
+                                    <option value="spouse">Spouse</option>
+                                    <option value="child">Child</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div style="margin-left: 10px;">
+                                <label>Start Date</label>
+                                <input type="date" class="input_3d">
+                                <label>Suspened Date</label>
+                                <input type="date" class="input_3d">
+                                <label>End Date</label>
+                                <input type="date" class="input_3d">
+                            </div>
+                            <div style="width: 870px; height: 190px; margin-top: 10px; border: 1px solid black;">
+                                <div>
+                                    <label class="label-left">Name(First, MI, Last, SUFF</label>
+                                    <input class="input_3d" size="15">
+                                    <input class="input_3d" size="3">
+                                    <input class="input_3d" size="15">
+                                    <input class="input_3d" size="4">
+                                </div>
+                                <div>
+                                    <label class="label-left">Address</label>
+                                    <input class="input_3d" size="30">
+                                </div>
+                                <div>
+                                    <label class="label-left">City, Sate, Zip</label>
+                                    <input class="input_3d" size="20">
+                                    <input class="input_3d" size="3">
+                                    <input class="input_3d" size="10">
+                                </div>
+                                <div>
+                                    <label class="label-left">Phone</label>
+                                    <input class="input_3d" size="10">
+                                    <label>SSN#</label>
+                                    <input class="input_3d" size="10">
+                                </div>
+                                <div>
+                                    <label class="label-left">DOB</label>
+                                    <input type="date" class="input_3d" size="10">
+                                    <label>Gender</label>
+                                    <select>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="unknown">Unknown</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="label-left">Employer</label>
+                                    <input class="input_3d" size="30">
+                                </div>
+                            </div>        
+                            <div style="width: 870px; height: 190px; margin-top: 10px; border: 1px solid black;">
+                                <div>
+                                    <label class="label-left">Name</label>
+                                    <input class="input_3d" size="30">
+                                    <input type="checkbox">
+                                    <label>Use Alt. Provider NPI</label>
+                                    <input type="checkbox">
+                                    <label>Use Alt. Provider Tax ID</label>
+                                </div>
+                                <div>
+                                    <label class="label-left">Address</label>
+                                    <input class="input_3d" size="30">
+                                    <input type="checkbox">
+                                    <label>Use Alt. Facility NPI</label>
+                                    <input type="checkbox">
+                                    <label>ID Qualifier 24i</label>
+                                </div>
+                                <div>
+                                    <label class="label-left">Address2</label>
+                                    <input class="input_3d" size="30">
+                                </div>
+                                <div>
+                                    <label class="label-left">City, State, Zip</label>
+                                    <input class="input_3d" size="15">
+                                    <input class="input_3d" size="3">
+                                    <input class="input_3d" size="3">
+                                </div>
+                                <div>
+                                    <label class="label-left">Phone</label>
+                                    <input class="input_3d" size="10">
+                                </div>
+                                <div>
+                                    <label class="label-left">Payer ID</label>
+                                    <input class="input_3d" size="10">
+                                    <label>Alt Payer ID</label>
+                                    <input class="input_3d" size="10">
+                                </div>
+                            </div> 
+                        </form>               
+                    </div>           
+                    <div id="benefits" name="insuranceTabs-content" style="width: 870px; height: 555px;">
+                    </div>           
+                    <div id="payments" name="insuranceTabs-content" style="width: 870px; height: 555px;">
+                    </div>           
+                    <div id="eligibility" name="insuranceTabs-content" style="width: 870px; height: 555px;">
+                    </div>           
+                </div>
+            </div>
+            <script type="text/javascript" src="js/icanotes_lite.js"></script>
+    </body>
+</html>

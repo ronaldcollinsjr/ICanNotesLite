@@ -1,0 +1,280 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <form>
+            <title>Patient Information</title>
+            <div style="width: 100%; height: 50%;">
+                <div class="entry-left" style="width: 200px;">
+                </div>
+                <div class="entry-left">
+                    <div>
+                        <label class="label-left required">Name(F, M.I.,L, Suffix)</label>
+                        <input id="firstName" class="input_3d" size="20" />
+                        <input id="midInit" class="input_3d" size="2" />
+                        <input id="lastName" class="input_3d" size="20" />
+                        <input id="suffix" class="input_3d" size="3" />
+                    </div>
+                    <div>
+                        <label class="label-left required">Refer to patient as</label>
+                        <input id="referName" class="input_3d" size="40" />
+                        <input id="otherNames" class="input_3d" size="30" />
+                    </div>
+                    <div>
+                        <label class="label-left required">Date of Birth</label>
+                        <input id="dateOfBirth" type="date" class="input_3d" size="10" />
+                        <label class="label-reg">Age</label>
+                        <input id="age" class="input_3d" size="2" />
+                        <label class="label-reg">Multiple Birth</label>
+                        <input type="checkbox" id="multipleBirth" />
+                        <label class="label-reg">Birth Order</label>
+                        <input id="multipleBirth" class="input_3d" size="2" />
+                    </div>
+                    <div>
+                        <label class="label-left">Sex</label>
+                        <input id="sex" class="input_3d" size="2" />
+                        <label class="label-reg">Gender</label>
+                        <select id="gender" class="input_3d"/>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="label-left">Address</label>
+                        <input id="address1" class="input_3d" size="40" />
+                        <label class="label-reg">Homeless</label>
+                        <input type="checkbox" id="homeless" />
+                    </div>
+                    <div>
+                        <label class="label-left">Apt2/Apt#</label>
+                        <input id="address2" class="input_3d" size="30" />
+                        <label class="label-reg">County</label>
+                        <input id="county" class="input_3d" size="20" />
+                        <label class="label-reg">Bad Address</label>
+                        <input type="checkbox" id="badAddress" />
+                    </div>
+                    <div>
+                        <label class="label-left">City, State, Zip</label>
+                        <input id="city" class="input_3d" size="25" />
+                        <select>
+                            <option value="MD">MD</option>
+                            <option value="VA">VA</option>
+                            <option value="DEV">DE</option>
+                        </select>
+                        <input id="zipCode" class="input_3d" size="10" />
+                    </div>
+                    <div class="spacer"></div>
+                    <div>
+                        <label class="label-left">Home Phone</label>
+                        <input class="input_3d" id="homePhone" size="12" />
+                        <label class="label-reg">Country</label>
+                        <input class="input_3d" id="country" size="10" />
+                    </div>
+                    <div>
+                        <label class="label-left">Cell Phone</label>
+                        <input class="input_3d" id="cellPhone" size="12" />
+                        <label class="label-reg">Best Phone</label>
+                        <select>
+                            <option value="home">Home</option>
+                            <option value="work">Work</option>
+                            <option value="cell">Cell</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="label-left">Work Phone</label>
+                        <input class="input_3d" id="workPhone" size="12" />
+                        <label class="label-reg">ext</label>
+                        <input class="input_3d" id="ext" size="10" />
+                        <label class="label-reg">Appt Reminders via</label>
+                        <select>
+                            <option value="email">Email</option>
+                            <option value="text">Text Message</option>
+                            <option value="phone">Phone Message</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="label-left">Email</label>
+                        <input class="input_3d" id="email" size="30" />
+                    </div>
+                    <div>
+                        <label class="label-left">Email 2</label>
+                        <input class="input_3d" id="email2" size="30" />
+                    </div>
+                    <div>
+                        <label class="label-left">SSN #</label>
+                        <input class="input_3d" id="ssn" size="12" />
+                    </div>    
+                </div>
+                <div class="entry-right" style="margin-right: 85px; padding-left: 15px; width: 600px;">
+                    <div>
+                        <label class="label-left required">Date of Entry</label>
+                        <input class="input_3d" id="dateOfEntry" size="10" />
+                    </div>
+                    <div>
+                        <label class="label-left required">Unique Patient ID</label>
+                        <input class="input_3d" id="uniquePatientId" size="20" />
+                    </div>
+                    <div>
+                        <label class="label-left">Alt Patient ID</label>
+                        <input class="input_3d" id="altPatientId" size="20" />
+                    </div>
+                    <div>
+                        <label class="label-left">Room</label>
+                        <input class="input_3d" id="room" size="10" />
+                    </div>
+                    <div>
+                        <label class="label-left">MAR</label>
+                        <input type="checkbox" id="mar"/>
+                        <label class="label-reg">Extra Privacy</label>
+                        <input type="checkbox" id="extraPrivacy"/>
+                    </div>
+                    <div class="spacer">
+                        <h3>Implantable Devices</h3>                    
+                    </div>
+                    <div>
+                        <label>UDI</label>
+                        <input class="input_3d" id="udi" size="40" />
+                        <button>Add</button>
+                    </div>
+                    <div>
+                        <select class="select-multi" style="margin-top: 3px;" multiple>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>                    
+                    </div>
+                </div>
+            </div>
+            <div style="width: 1600px; height: 50%;">
+<!--
+                <div class="entry-left" style="width: 200px; background-color: yellow;">
+                </div>
+-->                                
+                <div class="entry-left" style="margin-left: 200px; width: 450px;">
+                    <div>
+                        <label class="label-left">Martial Status</label>
+                        <select>
+                            <option value="married">Married</option>
+                            <option value="single">Single</option>
+                            <option value="divorced">Divorced</option>
+                            <option value="separated">Separated</option>
+                            <option value="widowed">widowed</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="label-left">Sexual Orientation</label>
+                        <select>
+                            <option value="hetosexual">Hetosexual</option>
+                            <option value="homosexual">Homesexual</option>
+                            <option value="bisexual">Bisexual</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="label-left">Ethnicity</label>
+                        <select>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="native">Native American</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="label-left">Ethnicity 2</label>
+                        <select>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="native">Native American</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="label-left">Race</label>
+                        <select>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="native">Native American</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="label-left">Race 2</label>
+                        <input class="input_3d" id="race2" size="20" />
+                    </div>
+                    <div>
+                        <label class="label-left">Preferred Language</label>
+                        <input class="input_3d" id="language" size="20" />
+                    </div>
+                    <div>
+                        <label class="label-left">Religion</label>
+                        <select>
+                            <option value="christain">Christian</option>
+                            <option value="Muslim">Muslim</option>
+                            <option value="Buddhist">Buddhist</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="entry-left" style="width: 500px;">
+                    <div>
+                        <label class="label-left">Veteran</label>
+                        <select>
+                             <option value="yes">YES</option>
+                             <option value="no">NO</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="label-left">Disability</label>
+                        <input class="input_3d" id="disability" size="30" />
+                    </div>    
+                    <div>
+                        <label class="label-left">Family Size</label>
+                        <input class="input_3d" id="familySize" size="3" />    
+                    </div>
+                    <div>
+                        <label class="label-left">Employment Status</label>
+                        <select>
+                            <option value="fulltime">Full Time</option>
+                            <option value="partime">Part Time</option>
+                            <option value="unemployed">Native American</option>
+                        </select>    
+                    </div>
+                    <div>
+                        <label class="label-left">Annual Household Income</label>
+                        <select>
+                            <option value="1000">0-1000</option>
+                            <option value="10000">1001-10000</option>
+                            <option value="20000">10000-20000</option>
+                        </select>    
+                    </div>
+                    <div>
+                        <label class="label-left">School or Employer</label>
+                        <input class="input_3d" id="familySize" size="20"/>    
+                    </div>
+                    <div>
+                        <label class="label-left">Grade</label>
+                        <select>
+                            <option value="GED">GED</option>
+                            <option value="gradeschool">Grade School</option>
+                            <option value="highschool">High School</option>
+                        </select>    
+                    </div>                    
+                </div>
+                <div class="entry-left" style="width: 400px;">
+                    <div class="textarea">
+                        <label class="label-left">Release of Info</label>
+                        <textarea></textarea>
+                    </div>
+                    <div class="textarea">
+                        <label class="label-left">Adv. Dir.</label>
+                        <textarea></textarea>
+                    </div>
+                    <div class="textarea">
+                        <label class="label-left">Patient Calender Note</label>
+                        <textarea></textarea>
+                    </div>
+                    <div class="textarea">
+                        <label class="label-left">Misc. Notes</label>
+                        <textarea></textarea>
+                    </div>
+                </div>    
+            </div>
+        </form>
+    </body>
+</html>
